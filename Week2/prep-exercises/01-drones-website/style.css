@@ -1,3 +1,6 @@
+.flexbox-section {
+  margin: auto;
+}
 .flexbox-list {
   display: flex;
   flex-wrap: wrap;
@@ -19,4 +22,17 @@
 }
 .flexbox-item > img {
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .flexbox-item {
+    box-sizing: border-box;
+    width: 25%;
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid lightgray;
+    list-style-type: none;
+  }
+  .flexbox-item:nth-of-type(-n + 2) {
+    width: 45%;
+  }
 }
