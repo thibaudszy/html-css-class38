@@ -18,7 +18,7 @@
   list-style-type: none;
 }
 .flexbox-item:first-of-type {
-  width: 45%;
+  flex-grow: 2;
 }
 .flexbox-item > img {
   width: 100%;
@@ -28,7 +28,7 @@
     width: 25%;
   }
   .flexbox-item:nth-of-type(-n + 2) {
-    width: 45%;
+    flex-gow: 2;
   }
 }
 @media (max-width: 500px) {
