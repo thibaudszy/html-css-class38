@@ -1,0 +1,22 @@
+.flexbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  padding: 0;
+}
+
+.flexbox-item {
+  box-sizing: border-box;
+  width: 20%;
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid lightgray;
+  list-style-type: none;
+}
+.flexbox-item:first-of-type {
+  width: 45%;
+}
+.flexbox-item > img {
+  width: 100%;
+}
