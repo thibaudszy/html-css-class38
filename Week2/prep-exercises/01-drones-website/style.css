@@ -1,6 +1,9 @@
+/* FLEXBOX layout */
+
 .flexbox-section {
   margin: auto;
 }
+
 .flexbox-list {
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +21,8 @@
   list-style-type: none;
 }
 .flexbox-item:first-of-type {
-  width: 40%;
+  width: 45%;
+  max-width: 100%;
 }
 .flexbox-item > img {
   width: 100%;
@@ -37,6 +41,8 @@
   }
 }
 
+/* GRID layout */
+
 .grid-list {
   display: grid;
   width: 100%;
@@ -50,13 +56,15 @@
   padding: 10px;
   border: 2px solid lightgray;
   list-style-type: none;
-  grid-column-start: span 3;
 }
 
 .grid-item > img {
   width: 100%;
 }
 @media (min-width: 1024px) {
+  .grid-item {
+    grid-column-start: span 3;
+  }
   .grid-item:first-of-type {
     grid-column-start: span 6;
   }
